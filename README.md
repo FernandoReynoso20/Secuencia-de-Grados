@@ -5,6 +5,7 @@ Este programa implementa una estructura de grafo no dirigido, permitiendo la rep
 Entrada:
 
 Vértices: {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'}
+
 Aristas: { {'A', 'B'}, {'A', 'C'}, {'B', 'D'}, {'B', 'E'}, {'C', 'F'}, {'C', 'G'}, {'D', 'E'}, {'D', 'H'}, {'E', 'I'}, {'F', 'G'}, {'G', 'H'}, {'H', 'I'}, {'I', 'F'} }
 
 Salida:
@@ -12,14 +13,23 @@ Secuencia de grados:
 [3, 3, 3, 3, 3, 3, 2, 2, 2]
 
 Lista de adyacencia:
+
 A => [B, C]
+
 B => [A, D, E]
+
 C => [A, F, G]
+
 D => [B, E, H]
+
 E => [B, D, I]
+
 F => [C, G, I]
+
 G => [C, F, H]
+
 H => [D, G, I]
+
 I => [E, H, F]
 
 El programa tiene un rendimiento eficiente en términos de tiempo para grafos pequeños a medianos. La complejidad de la mayoría de las operaciones es lineal con respecto al número de vértices y aristas.
