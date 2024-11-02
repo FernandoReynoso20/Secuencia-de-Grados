@@ -10,7 +10,7 @@ public class Grafo {
         this.vertices = new ArrayList<>();
         this.listaAdyacencia = new ArrayList<>();
 
-        // Inicializamos los vértices y sus listas de adyacencia
+        // Inicializamos los vértices y la lista de adyacencia
         for (char vertice : vertices) {
             this.vertices.add(vertice);
             this.listaAdyacencia.add(new ArrayList<>());
